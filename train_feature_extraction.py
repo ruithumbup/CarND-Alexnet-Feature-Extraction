@@ -16,7 +16,7 @@ X_train, X_val, y_train, y_val = train_test_split(data['features'], data['labels
 x = tf.placeholder(tf.float32, (None, 32, 32, 3))
 resized = tf.image.resize_images(x, (227, 227))
 y = tf.placeholder(tf.int32, (None))
-one_hot_y = tf.one_hot(y, n_classes)
+one_hot_y = tf.one_hot(y, nb_classes)
 keep_prob = tf.placeholder(tf.float32)
 # TODO: pass placeholder as first argument to `AlexNet`.
 fc7 = AlexNet(resized, feature_extract=True)
