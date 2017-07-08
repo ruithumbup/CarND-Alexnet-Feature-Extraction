@@ -6,7 +6,7 @@ from alexnet import AlexNet
 
 nb_classes = 43
 rate = 0.001
-EPOCHS = 12
+EPOCHS = 10
 BATCH_SIZE = 128
 
 # TODO: Load traffic signs data.
